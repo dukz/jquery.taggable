@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>jQuery Taggable Plugin</title>
+
+		<style>
+			html, body, table, td {
+				font-family: 'Helvetica Neue', verdana, sans-serif;
+			}
+
+			input[type="text"] { width: 300px; }
+		</style>
+
+		<link type="text/css" rel="stylesheet" href="stylesheets/jquery.taggable-0.1.0.css" />
+
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+		<script type="text/javascript" src="javascripts/jquery.taggable-0.1.0.js"></script>
+	</head>
+	<body>
+		<form>
+			<label for="skills">Skills</label><br />
+			<input type="text" id="skills" name="tags" />
+		</form>
+
+		<div id="tags_taggable"></div>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+				var skill_tags = ['c#', 'php', 'java', 'javascript', 'ruby'];
+				$('#tags_taggable').Taggable({ field_selector: '#skills', available_tags: skill_tags });
+			});
+		</script>
+	</body>
+</html>

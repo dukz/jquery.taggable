@@ -1,0 +1,17 @@
+.clear { clear: both; }
+
+.taggable-container {
+  padding: 4px;
+  background: #E1E1E1;
+
+  border: 1px solid #CCCCCC;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+}
+
+.taggable-tag {
+  display: inline;
+  width: 220px;
+  float: left;
+  margin: 2px 0px 2px 0px;
+}
