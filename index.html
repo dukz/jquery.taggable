@@ -8,6 +8,11 @@
 				font-family: 'Helvetica Neue', verdana, sans-serif;
 			}
 
+			#content {
+				width: 940px;
+				margin: 0px auto;
+			}
+
 			input[type="text"] { width: 300px; }
 		</style>
 
@@ -15,20 +20,30 @@
 
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
 		<script type="text/javascript" src="javascripts/jquery.taggable-0.1.0.js"></script>
-	</head>
-	<body>
-		<form>
-			<label for="skills">Skills</label><br />
-			<input type="text" id="skills" name="tags" />
-		</form>
-
-		<div id="tags_taggable"></div>
-
 		<script type="text/javascript">
 			$(document).ready(function() {
 				var skill_tags = ['c#', 'php', 'java', 'javascript', 'ruby'];
 				$('#tags_taggable').Taggable({ field_selector: '#skills', available_tags: skill_tags });
 			});
 		</script>
+	</head>
+	<body>
+		<div id="content">
+			<h1>jQuery Taggable Plugin</h1>
+			<div>
+				<p>The taggable plugin helps you create an area with a checkboxes for the tags, and will bind them to a specified text input field.</p>
+				Homepage: <a href="http://github.com/dukz/jquery.taggable">github.com/dukz/jquery.taggable</a>
+			</div>
+
+
+			<h2>Live Example</h2>
+
+			<form>
+				<h3>User Skills</h3>
+				<label for="skills">Skill Tags</label><br />
+				<input type="text" id="skills" name="tags" />
+			</form>
+			<div id="tags_taggable"></div>
+		</div>
 	</body>
 </html>
