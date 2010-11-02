@@ -23,7 +23,7 @@
 		<script type="text/javascript">
 			$(document).ready(function() {
 				var skill_tags = ['c#', 'php', 'java', 'javascript', 'ruby'];
-				$('#tags_taggable').Taggable({ field_selector: '#skills', available_tags: skill_tags });
+				$('#skills_list_tags').Taggable({ field_selector: '#skills_list_field', available_tags: skill_tags });
 			});
 		</script>
 	</head>
@@ -40,10 +40,10 @@
 
 			<form>
 				<h3>User Skills</h3>
-				<label for="skills">Skill Tags</label><br />
-				<input type="text" id="skills" name="tags" />
+				<label for="skills_list_field">Skill Tags</label><br />
+				<input type="text" id="skills_list_field" name="skills_list" value="java" />
+				<div id="skills_list_tags"></div>
 			</form>
-			<div id="tags_taggable"></div>
 		</div>
 	</body>
 </html>
