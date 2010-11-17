@@ -24,6 +24,9 @@
 			$(document).ready(function() {
 				var skill_tags = ['c#', 'php', 'java', 'javascript', 'ruby'];
 				$('#skills_list_tags').Taggable({ field_selector: '#skills_list_field', available_tags: skill_tags });
+
+				var talent_tags = ['dance', 'sing', 'eat', 'whatever'];
+				$('#talents_list_tags').Taggable({ field_selector: '#talents_list_field', available_tags: talent_tags });
 			});
 		</script>
 	</head>
@@ -35,14 +38,20 @@
 				Homepage: <a href="http://github.com/dukz/jquery.taggable">github.com/dukz/jquery.taggable</a>
 			</div>
 
-
 			<h2>Live Example</h2>
-
 			<form>
 				<h3>User Skills</h3>
 				<label for="skills_list_field">Skill Tags</label><br />
 				<input type="text" id="skills_list_field" name="skills_list" value="java" />
 				<div id="skills_list_tags"></div>
+			</form>
+
+			<h2>Live Example 2</h2>
+			<form>
+				<h3>User Talent</h3>
+				<label for="talents_list_field">Skill Tags</label><br />
+				<input type="text" id="talents_list_field" name="talents_list" value="eat" />
+				<div id="talents_list_tags"></div>
 			</form>
 		</div>
 	</body>
