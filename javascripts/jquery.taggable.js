@@ -1,5 +1,5 @@
 /*
- * jQuery Taggable v0.1.0
+ * jQuery Taggable v0.1.1
  * Andrew Angelo Ang
  */
 (function($) {
